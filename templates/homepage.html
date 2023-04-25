@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<div id="PageContainer">
+		<main role="main" id="Main">
+			<section class="section section--padding-top-only free-trial__header">
+        <img class="marketing-nav__logo__shopify free-trial__logo" src="{{url_for('static', filename='img/landing-logo.png')}}">
+        <div class="grid free-trial__hero-wrapper">
+	      	<div class="grid__item grid__item--desktop-up-two-thirds grid__item--desktop-up-align-center">
+	      		<div class="section-heading gutter-bottom">
+			      	<h1 class="section-heading__heading heading--1 free-trial__text free-trial__heading">Elevate Your Offering</h1>
+              <h1 class="section-heading__heading heading--1 free-trial__text free-trial__heading">With High-End Custom Products</h1>
+              <p class="section-heading__subhead heading--2 free-trial__text">Trusted by over 5000 retailers worldwide</p>
+			      </div>
+	      	</div>
+
+	      	<div class="row text-center">
+		      	<div class="col-sm-2 col-md-3"></div>
+		      	<div class="col-sm-8 col-md-6">
+		      		<div class="row">
+		      			<div class="col-12 col-sm-8">
+		      				<input type="text" class="form-control landing-email-form" placeholder="Enter your email address">
+		      			</div>
+		      			<div class="col-12 col-sm-4 mt-2 mt-sm-0">
+		      				<button class="btn shadow-none signup-button" type="button">Sign Up</button>
+		      			</div>
+		      			<p class="mt-4 mb-4 text-white">Sign up today to view your exclusive welcome offer.</p>				  
+							</div>
+		      	</div>
+		      	<div class="col-sm-2 col-md-3"></div>
+		      </div>
+
+		      <div class="row">
+		      	<div class="col-md-2"></div>
+		      	<div class="col-md-8">
+		      		<img alt="landing-image" src="{{url_for('static', filename='img/Laptop-image.png')}}" class="landing-image" />
+		      	</div>
+		      	<div class="col-md-2"></div>
+		      </div>
+	      </div>
+      </section>
+
+			<div class="container">
+				<div class="row pt-5 pb-5">
+	      	<div class="col-12 col-sm-4 pt-0 pt-sm-5 pb-5">
+            <img alt="shipping-icon" src="{{url_for('static', filename='img/shipping-icon.png')}}" height="45" />
+	      		<p class="heading-4">Domestic Production</p>
+	          <p class="block-content">Orders ship within 14 days from the USA, so you never have to worry about overseas delays.</p>
+	      	</div>
+	      	<div class="col-12 col-sm-4 pt-0 pt-sm-5 pb-5">
+            <img alt="money-icon" src="{{url_for('static', filename='img/money-icon.png')}}" height="45" />
+	      		<p class="heading-4">Lowest MOQs in the Industry</p>
+	          <p class="block-content">Put 100% of your Open to Buy to work on the Retail floor, instead of the back room.</p>
+	      	</div>
+	      	<div class="col-12 col-sm-4 pt-0 pt-sm-5 pb-5">
+            <img alt="design-icon" src="{{url_for('static', filename='img/design-icon.png')}}" height="45" />
+	      		<p class="heading-4">Premium Design</p>
+	          <p class="block-content">Our seasoned designers will ensure that your custom designs are top shelf and will elevate the quality of your offering to the next level.</p>
+	      	</div>
+          <div class="col-12 text-center">
+		      	<button type="button" class="btn shadow-none footer-button">Sign Up</button>
+	      	</div>
+	      </div>
+		  </div>      
+	  </main>
+	<div>
+{% endblock content %}
